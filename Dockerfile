@@ -7,6 +7,6 @@ WORKDIR /home/ec2-user
 
 COPY requirements.txt ./
 RUN pip3 install --no-cache-dir -r requirements.txt
-RUN git clone https://github.com/ncooper76/Data602_assigment3_Python /home/ec2-user/apps
+RUN git clone https://github.com/ncooper76/Data602_assignment3_Python /home/ec2-user/apps
 EXPOSE 5000
 CMD ["python", "/home/ec2-user/apps/DATA602_assignement3.py"]
